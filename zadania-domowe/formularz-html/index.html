@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
+
 <body>
-     <form action="https://formspree.io/aleksandra@kolodziejczak.info" method="post">
+    <form action="https://formspree.io/aleksandra@kolodziejczak.info" method="post">
         <label for="imie">Imię:</label><br>
         <input type="text" name="imie" id="imie"><br>
         <label for="nazwisko">Nazwisko:</label><br />
@@ -14,9 +16,21 @@
         <input type="text" name="email" id="email"><br>
         <label for="number">Numer telefonu:</label><br>
         <input type="text" name="number" id="number"><br>
+        <label for="miasto">Wybierz miasto:</label><br>
+        <select name="nawzwa" id="miasto">
+		<option>Kraków</option>
+		<option>Warszawa</option>
+        <option>Gdańśk</option>
+        </select><br>
+        <label for="plec">Płeć:</label><br>
+        <input type="radio" name="Plec" id="plec" value="Kobieta" />Kobieta
+        <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna<br>
+        <label for="dane">Zgoda na dane osobowe:</label><br>
+        <input type="checkbox" name="dane" id="dane" value="yes" />Tak<br>
         <label for="message">Wiadomość:</label><br>
         <textarea maxlength="1000" id="message"></textarea><br>
         <input type="submit" value="Wyślij">
-    </form>  
+    </form>
 </body>
-</html>    
+
+</html>
