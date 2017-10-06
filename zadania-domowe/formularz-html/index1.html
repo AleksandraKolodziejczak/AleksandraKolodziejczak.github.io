@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/aleksandra@kolodziejczak.info" method="post" autocomplete="on">
+       <fieldset>
+           <legend>Customer info:</legend>
+            <label for="imie">Imię:</label><br>
+            <input type="text" name="imie" id="imie" autofocus placeholder="Name" required><br>          
+            <label for="number">Telephone:</label><br>
+            <input type="text" name="number" id="number" placeholder="1-234-567-8910" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+            <label for="email">Email adress:</label><br>
+            <input type="email" name="email" id="email" placeholder="characters@characters.domain" multiple required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Books:</legend><br>
+            <input list="list">
+            <datalist id="list">
+		        <option value="Janko Muzykant">
+		        <option value="Ogniem i Mieczem">
+                <option value="Krzyżacy">
+                <option value="Pan Wołodyjowski">
+                <option value="Potop">
+            </datalist>
+            <label for="quantity">Quantity (Maximum5):</label>
+            <input type="number" name="quantity" id="quantity" min="1" max="5"><br>    
+        </fieldset>
+        <input type="submit" value="Wyślij">
+    </form>
+</body>
+
+</html>
