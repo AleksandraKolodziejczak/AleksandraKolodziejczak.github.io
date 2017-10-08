@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -24,15 +26,16 @@
         </select><br><br>
         <fieldset>
             <legend>Płeć:</legend><br>
-        <label for="kobieta">Kobieta</label>
-        <input type="radio" name="plec" id="kobieta" value="kobieta"><br>
-        <label for="mezczyzna">Mężczyzna</label>
-        <input type="radio" name="plec" id="mezczyzna" value="mezczyzna"><br><br>
+            <input type="radio" name="plec" id="kobieta" value="kobieta">
+            <label for="kobieta">Kobieta</label><br>
+            <input type="radio" name="plec" id="mezczyzna" value="mezczyzna">
+            <label for="mezczyzna">Mężczyzna</label>
         </fieldset>
-        <label for="dane">Zgoda na dane osobowe:</label><br>
-        <input type="checkbox" name="dane" id="dane" value="yes" />Tak<br>
-        <label for="message">Wiadomość:</label><br>
-        <textarea maxlength="1000" id="message"></textarea><br>
+        
+        <label for="message">Wiadomość:</label>
+        <textarea maxlength="1000" id="message"></textarea>
+        <label for="dane">Zgoda na dane osobowe:</label>
+        <input type="checkbox" name="dane" id="dane" value="yes" />Tak
         <input type="submit" value="Wyślij">
     </form>
 </body>
