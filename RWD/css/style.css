@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    font-size: 22px;
+    color: #291f1a;
+    background-color: #000;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+}
+
+@media all and (min-width: 1170px) {
+    #main-header {
+        height: 80vh;
+        width: 100%;
+        background: url(../img/man-1.jpg) no-repeat;
+        background-size: cover;
+        text-align: left;
+    }
+
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        line-height: 1.7;
+        padding-left: 30px
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1170px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    nav {
+        height: 60px;
+        background-color: #000;
+        overflow: hidden;
+    }
+
+
+    #main-header {
+        height: 80vh;
+        background: url(../img/man-2.jpg) no-repeat;
+        background-size: 100% 70%;
+    }
+    h1 {
+        top: 5%;
+        right: 5%;
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        margin: 0;
+    }
+}
+
+@media all and (max-width: 992px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #main-header {
+        height: 80vh;
+        background: url(../img/man-1.jpg) no-repeat;
+        text-align: center;
+        background-size: 100% 50%;
+    }
+
+    h1 {
+        text-transform: uppercase;
+        margin: 0;
+        position: relative;
+        top: 50%;
+    }
+
+}
