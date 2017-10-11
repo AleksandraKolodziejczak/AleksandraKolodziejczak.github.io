@@ -1,0 +1,41 @@
+body {
+    margin: 0 auto;
+}
+
+figure {	
+    width: 50%;
+    position: relative;
+    margin: 30px auto;	
+}
+
+figure::before {content: ' '; border: 0px solid #000;  position: absolute; width: 100%; height: 0; border-bottom: none; transition: all 1s linear;}
+figure::after {content: ' '; border: 0px solid #000;  position: absolute;  width: 100%; height: 0; border-top: none; top: 100%; transition: all 1s linear;}
+figure:hover:before {content: ' '; border: 1px solid #000;  position: absolute; width: 100%; height: 50%; border-bottom: none;}
+figure:hover:after {content: ' '; border: 1px solid #000;  position: absolute;  width: 100%; height: 50%; border-top: none; top: 50%;}
+
+img {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    position: relative;
+	display:block;
+}
+
+h1 {
+    text-transform: uppercase;
+    position: absolute;
+    color: rgba(255,255,255,0.0);
+    background-color: rgba(0,0,0,0.0);
+    width: 100%;
+    text-align: center;
+    top: 45%;
+    margin: 0;
+	transition: all 1s linear;
+}
+
+figure:hover h1 {
+    color: rgba(255,255,255,1.0);
+    background-color: rgba(0,0,0,1.0);
+}
+
+
