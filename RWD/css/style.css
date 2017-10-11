@@ -46,7 +46,9 @@ nav {
     #main-header {
         height: 80vh;
         background: url(../img/man-2.jpg) no-repeat;
-        background-size: 100% 70%;
+		
+        
+		background-size: cover;
     }
     h1 {
         top: 5%;
@@ -72,7 +74,7 @@ nav {
         height: 80vh;
         background: url(../img/man-1.jpg) no-repeat;
         text-align: center;
-        background-size: 100% 50%;
+        background-size: contain;
     }
 
     h1 {
