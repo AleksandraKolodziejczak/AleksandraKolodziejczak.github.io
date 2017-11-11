@@ -205,13 +205,16 @@ h2 {
 #portfolio .col-md-6, #portfolio .col-md-12 {padding: 0;}
 
 /*kontakt*/
+
+
+
 #contact {
     background-color: #213B50;
     color: #fff;
     overflow: hidden;
 }
 
-#contact h2 {
+ #contact h2 {
     text-align: left;
     font-size: 38px;
 }
@@ -259,6 +262,8 @@ h2 {
     font-style: normal;
     margin: 72px 0;
     line-height: 25px;
+    
+    
 }
 
 #contact a {
@@ -269,11 +274,12 @@ h2 {
     display: inline-block;
     height: 38px;
     width: 38px;
-    text-align: center;
+text-align: center;
     line-height: 38px;
     border: 1px solid #fff;
     margin-right: 30px;
     font-size: 22px;
+    
 }
 
 #contact .contact-social-icons a:hover {
@@ -282,9 +288,29 @@ h2 {
     background-color: #fff;
 }
 
-#contact .col-sm-12 {text-align: center;}
-#contact .col-sm-12 h2 {text-align: center;}
-#contact .col-sm-12 input[type='submit'] {float: none;}
+@media all and (max-width: 992px) {
+    #contact .col-sm-12,
+    #contact .col-12 {
+        text-align: center;
+    }
+    #contact .col-sm-12,
+    #contact .col-12 h2 {
+        text-align: center;
+    }
+    #contact .col-sm-12,
+    #contact .col-12 input[type='submit'] {
+        float: none;
+    }
+
+}
+/*
+#contact .col-sm-12, #contact .col-12 {text-align:center;}
+
+#contact .col-md-6, #contact .col-lg-6 {
+    text-align: left;
+}
+*/
+
 /*footer*/
 footer {
     background-color: #142634;
