@@ -8,16 +8,18 @@ $(document).ready(function () {
         $.getJSON("https://blockchain.info/pl/ticker", function (data) {
             console.log(data.PLN.sell);
 
-            document.getElementById('buy').innerHTML = "buy: " + data.PLN.buy;
-            document.getElementById('sell').innerHTML = "sell: " + data.PLN.sell;
+
+            var sprzedaz = document.getElementById('sell').innerHTML = "sell: " + data.PLN.sell;
+            var kupno = document.getElementById('buy').innerHTML = "buy: " + data.PLN.buy;
 
 
 
-            if (data.PLN.sell > data.PLN.last) {
+
+            if (data.PLN.sell > sprzedaz) {
 
 
                 ($('#sell').append("<i class='fa fa-arrow-up' aria-hidden='true'></i>"));
-            } else if (data.PLN.sell == data.PLN.last) {
+            } else if (data.PLN.sell == sprzedaz) {
                 ($('#sell').append("<i class='fa fa-arrows-h' aria-hidden='true'></i>"));
             } else {
                 ($('#sell').append("<i class='fa fa-arrow-down' aria-hidden='true'></i>"));
@@ -25,11 +27,11 @@ $(document).ready(function () {
 
 
 
-            if (data.PLN.buy > data.PLN.last) {
+            if (data.PLN.buy > kupno) {
 
 
                 ($('#buy').append("<i class='fa fa-arrow-up' aria-hidden='true'></i>"));
-            } else if (data.PLN.buy == data.PLN.last) {
+            } else if (data.PLN.buy == kupno) {
                 ($('#buy').append("<i class='fa fa-arrows-h' aria-hidden='true'></i>"));
             } else {
                 ($('#buy').append("<i class='fa fa-arrow-down' aria-hidden='true'></i>"));
