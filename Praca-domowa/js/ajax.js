@@ -8,33 +8,36 @@ $(document).ready(function () {
         $.getJSON("https://blockchain.info/pl/ticker", function (data) {
             console.log(data.PLN.sell);
 
-
-            var sprzedaz = document.getElementById('sell').innerHTML = "sell: " + data.PLN.sell;
-            var kupno = document.getElementById('buy').innerHTML = "buy: " + data.PLN.buy;
-
-
-
-
-            if (data.PLN.sell > sprzedaz) {
+            var ostatniaSprzedaz = $('#sell').html();
+            var ostatnieKupno = $('#buy').html();
+            var sprzedaz = data.PLN.sell;
+            var kupno = data.PLN.buy;
+            $('#sell').html("<span>sell: </span>" + data.PLN.sell);
+            $('#buy').html("<span>buy: </span>" + data.PLN.buy);
 
 
-                ($('#sell').append("<i class='fa fa-arrow-up' aria-hidden='true'></i>"));
+
+
+            if (sprzedaz > ostatniaSprzedaz) {
+
+
+                ($('#sell-arrow').html("<span><i class='fa fa-arrow-up' aria-hidden='true'></i></span>"));
             } else if (data.PLN.sell == sprzedaz) {
-                ($('#sell').append("<i class='fa fa-arrows-h' aria-hidden='true'></i>"));
+                ($('#sell-arrow').html("<span><i class='fa fa-arrows-h' aria-hidden='true'></i></span>"));
             } else {
-                ($('#sell').append("<i class='fa fa-arrow-down' aria-hidden='true'></i>"));
+                ($('#sell-arrow').html("<span><i class='fa fa-arrow-down' aria-hidden='true'></i></span>"));
             }
 
 
 
-            if (data.PLN.buy > kupno) {
+            if (kupno > ostatnieKupno) {
 
 
-                ($('#buy').append("<i class='fa fa-arrow-up' aria-hidden='true'></i>"));
+                ($('#buy-arrow').html("<span><i class='fa fa-arrow-up' aria-hidden='true'></i></span>"));
             } else if (data.PLN.buy == kupno) {
-                ($('#buy').append("<i class='fa fa-arrows-h' aria-hidden='true'></i>"));
+                ($('#buy-arrow').html("<span><i class='fa fa-arrows-h' aria-hidden='true'></i></span>"));
             } else {
-                ($('#buy').append("<i class='fa fa-arrow-down' aria-hidden='true'></i>"));
+                ($('#buy-arrow').html("<span><i class='fa fa-arrow-down' aria-hidden='true'></i></span>"));
             }
 
         });
