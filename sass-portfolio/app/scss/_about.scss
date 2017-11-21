@@ -1,0 +1,18 @@
+@import 'zmienne';
+@import 'mixins';
+#about {
+    background-color: #f9fcfe;
+    overflow: hidden;
+
+
+    figure {
+       @include figure;
+
+
+        img {
+            border: 14px solid $white;
+            border-radius: 15px;
+            width: 100%;
+        }
+    }
+}

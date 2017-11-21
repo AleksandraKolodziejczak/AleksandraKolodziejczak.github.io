@@ -1,0 +1,39 @@
+@import 'zmienne';
+@import 'mixins';
+#main-nav {
+    background-color: $white;
+
+
+
+    .navbar-nav {
+        text-align: right;
+    }
+
+
+    a.navbar-brand {
+        font-size: 2em;
+    }
+
+
+    .nav-item a {
+        padding-right: 4.5rem;
+        color: $green;
+        text-decoration: none;
+
+        &:hover {
+            color: $grey;
+        }
+
+    }
+    #main-nav.scroll {
+        background-color: rgba(26, 192, 86, 0.75);
+
+        .nav-item a {
+            color: $grey;
+        }
+ 
+        &:hover {
+            color: #000;
+        } 
+    }
+}

@@ -1,0 +1,36 @@
+@import 'zmienne';
+@import 'mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $main-font;
+    color: $main-color;
+}
+
+
+section {
+    padding: 0 60px 100px;
+
+    h2 {
+        @include section-h2;
+    }
+}
+
+p {
+    line-height: 25px;
+}
+
+.col-md-3,
+.col-md-4,
+.col-md-6 {
+    padding: 0;
+}
+
+.col-sm-12,
+.col-12 {
+    width: 100%;
+}

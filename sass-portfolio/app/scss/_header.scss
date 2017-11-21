@@ -1,0 +1,26 @@
+@import 'zmienne';
+@import 'mixins';
+#main-header {
+    background: url(../img/header-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+
+
+
+    .main-header-text {
+        padding: 30vh;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    h1 {
+        @include h1;
+    }
+
+   
+    h2 {
+        font-weight: 100;
+        font-size: 2em;
+    }
+}

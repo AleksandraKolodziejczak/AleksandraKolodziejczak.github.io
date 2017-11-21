@@ -1,0 +1,78 @@
+@mixin section-h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@mixin figure {
+    margin: 0 auto;
+    text-align: center;
+    width: 318px;
+    height: 356px;
+}
+@mixin h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+@mixin portfolio-item {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 33%;
+    position: relative;
+    display: inline-block;
+} 
+
+@mixin mask { 
+    background-color: rgba(42, 61, 79, 0.8);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    font-size: initial;
+}
+
+
+@mixin input {
+        border: 0 solid;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color: $blue;
+        border: $blue 0px;
+        color: $white;
+        text-transform: uppercase;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+@mixin submit { 
+    background-color: $green;
+    border: 0 solid $green;
+    color: $white;
+    transition: all .3s;
+    cursor: pointer;
+    border-radius: 2px;
+    float: left;
+    padding: 15px; 
+} 
+
+@mixin social {
+        display: inline-block;
+        height: 38px;
+        width: 38px;
+        text-align: center;
+        line-height: 38px;
+        border: 1px solid #fff;
+        margin-right: 30px;
+        font-size: 22px; 
+}

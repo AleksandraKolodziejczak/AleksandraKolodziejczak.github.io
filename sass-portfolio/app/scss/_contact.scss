@@ -1,0 +1,55 @@
+@import 'zmienne';
+@import 'mixins';
+#contact {
+    background-color: #213B50;
+    color: $white;
+    overflow: hidden;
+
+    h2 {
+        text-align: left;
+        font-size: 38px;
+    }
+    a {
+        color: $green;
+    }
+
+    .contact-form {
+        margin-top: 100px;
+
+
+        input:not([type='submit']),
+        textarea {
+            @include input;
+
+            &:focus {
+                background-color: $blue;
+            }
+        }
+
+        input[type='submit'] {
+            @include submit;
+
+
+            &:hover {
+                background-color: $white;
+                color: $green;
+            }
+        }
+    }
+    address {
+        font-style: normal;
+        margin: 72px 0;
+        line-height: 25px;
+    }
+
+
+    .contact-social-icons a {
+        @include social;
+
+        &:hover {
+            color: $blue;
+            border: 1px solid $blue;
+            background-color: $white;
+        }
+    }
+}

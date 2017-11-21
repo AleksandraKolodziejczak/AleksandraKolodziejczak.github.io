@@ -1,0 +1,68 @@
+@import 'zmienne';
+@import 'mixins';
+#portfolio {
+    .portfolio-items {
+        text-align: center;
+        font-size: 0;
+
+        .portfolio-item {
+            @include portfolio-item;
+        
+
+            .item-mask {
+            @include mask;
+
+            &:hover {
+                opacity: 1;
+            }
+
+                .item-content {
+                    border: 1px solid $white;
+                    margin: 10px;
+                    height: 330px;
+                    position: relative;
+                
+
+                    .item-content-inner {
+                        color: $white;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 0;
+                        left: 0;
+                        padding: 5px;
+                    
+
+                        a {
+                            color: #fff;
+                            & :hover {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .col-md-6,
+    .col-md-12 {
+        padding: 0;
+    }
+
+    #portfolio-item-1 {
+        background-image: url(../img/portfolio1.jpg);
+        width: 100%;
+    }
+
+    #portfolio-item-2 {
+        background-image: url(../img/portfolio2.jpg);
+        width: 100%;
+    }
+
+    #portfolio-item-3 {
+        background-image: url(../img/portfolio4.jpg);
+        width: 100%;
+    }
+}

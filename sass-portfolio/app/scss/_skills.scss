@@ -1,0 +1,20 @@
+@import 'zmienne';
+@import 'mixins';
+#skills {
+    p {
+        text-align: center;
+    }
+
+    figure 
+        img {
+            margin-bottom: 15px;
+        }
+
+    #skills-icons {
+        text-align: center;
+
+        &figure {
+            display: inline-block;
+        }
+    }
+}

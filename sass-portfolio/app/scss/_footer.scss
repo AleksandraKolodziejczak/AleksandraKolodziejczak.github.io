@@ -1,0 +1,13 @@
+@import 'zmienne';
+@import 'mixins';
+footer {
+    background-color: #142634;
+    color: $white;
+    padding: 0 80px;
+ 
+    p {
+        margin: 0;
+        float: left;
+    }
+}
+ 
