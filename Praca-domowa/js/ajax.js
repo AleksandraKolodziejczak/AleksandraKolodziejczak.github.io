@@ -12,8 +12,8 @@ $(document).ready(function () {
             var ostatnieKupno = $('#buy').html();
             var sprzedaz = data.PLN.sell;
             var kupno = data.PLN.buy;
-            $('#sell').html("<span>sell: </span>" + data.PLN.sell);
-            $('#buy').html("<span>buy: </span>" + data.PLN.buy);
+            $('#sell').html(data.PLN.sell);
+            $('#buy').html(data.PLN.buy);
 
 
 
