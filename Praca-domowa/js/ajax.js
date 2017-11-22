@@ -12,8 +12,8 @@ $(document).ready(function () {
             var ostatnieKupno = $('#buy').html();
             var sprzedaz = data.PLN.sell;
             var kupno = data.PLN.buy;
-            $('#sell').html(data.PLN.sell);
-            $('#buy').html(data.PLN.buy);
+            $('#sell').html(sprzedaz);
+            $('#buy').html(kupno);
 
 
 
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 
                 ($('#sell-arrow').html("<span><i class='fa fa-arrow-up' aria-hidden='true'></i></span>"));
-            } else if (data.PLN.sell == sprzedaz) {
+            } else if (data.PLN.sell == ostatniaSprzedaz) {
                 ($('#sell-arrow').html("<span><i class='fa fa-arrows-h' aria-hidden='true'></i></span>"));
             } else {
                 ($('#sell-arrow').html("<span><i class='fa fa-arrow-down' aria-hidden='true'></i></span>"));
@@ -34,7 +34,7 @@ $(document).ready(function () {
 
 
                 ($('#buy-arrow').html("<span><i class='fa fa-arrow-up' aria-hidden='true'></i></span>"));
-            } else if (data.PLN.buy == kupno) {
+            } else if (data.PLN.buy == ostatnieKupno) {
                 ($('#buy-arrow').html("<span><i class='fa fa-arrows-h' aria-hidden='true'></i></span>"));
             } else {
                 ($('#buy-arrow').html("<span><i class='fa fa-arrow-down' aria-hidden='true'></i></span>"));
