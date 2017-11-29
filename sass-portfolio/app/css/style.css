@@ -36,7 +36,8 @@ p {
     font-size: 2em; }
   #main-nav .nav-item a {
     padding-right: 4.5rem;
-    color: #1ac056;
+    font-size: 18px;
+    color: #00ccff;
     text-decoration: none; }
     #main-nav .nav-item a:hover {
       color: #777; }
@@ -48,7 +49,7 @@ p {
       color: #000; }
 
 #main-header {
-  background: url(../img/header-background.jpg) no-repeat;
+  background: url(../img/portfolio4.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff; }
@@ -59,10 +60,10 @@ p {
   #main-header h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 4em;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 2em; }
   #main-header h2 {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 2em; }
 
 #about {
@@ -100,6 +101,7 @@ img {
     background-size: cover;
     width: 33%;
     position: relative;
+    cursor: pointer;
     display: inline-block; }
     #portfolio .portfolio-items .portfolio-item .item-mask {
       background-color: rgba(42, 61, 79, 0.8);
@@ -127,22 +129,22 @@ img {
           #portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a {
             color: #fff; }
             #portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a :hover {
-              color: #1ac056; }
+              color: #00ccff; }
 
 #portfolio .col-md-6,
 #portfolio .col-md-12 {
   padding: 0; }
 
 #portfolio #portfolio-item-1 {
-  background-image: url(../img/portfolio1.jpg);
+  background-image: url(../img/czytelnia.jpg);
   width: 100%; }
 
 #portfolio #portfolio-item-2 {
-  background-image: url(../img/portfolio2.jpg);
+  background-image: url(../img/karierawtoku.jpg);
   width: 100%; }
 
 #portfolio #portfolio-item-3 {
-  background-image: url(../img/portfolio4.jpg);
+  background-image: url(../img/tlo7.jpg);
   width: 100%; }
 
 #contact {
@@ -153,7 +155,7 @@ img {
     text-align: left;
     font-size: 38px; }
   #contact a {
-    color: #1ac056; }
+    color: #00ccff; }
   #contact .contact-form {
     margin-top: 100px; }
     #contact .contact-form input:not([type='submit']),
@@ -172,8 +174,8 @@ img {
       #contact .contact-form textarea:focus {
         background-color: #2b4a64; }
     #contact .contact-form input[type='submit'] {
-      background-color: #1ac056;
-      border: 0 solid #1ac056;
+      background-color: #00ccff;
+      border: 0 solid #00ccff;
       color: #fff;
       transition: all .3s;
       cursor: pointer;
@@ -182,7 +184,7 @@ img {
       padding: 15px; }
       #contact .contact-form input[type='submit']:hover {
         background-color: #fff;
-        color: #1ac056; }
+        color: #00ccff; }
   #contact address {
     font-style: normal;
     margin: 72px 0;
