@@ -36,9 +36,9 @@ p {
     font-size: 2em; }
   #main-nav .nav-item a {
     padding-right: 4.5rem;
-    font-size: 18px;
-    color: #00ccff;
-    text-decoration: none; }
+    color: #00b7e5;
+    text-decoration: none;
+    font-size: 18px; }
     #main-nav .nav-item a:hover {
       color: #777; }
   #main-nav #main-nav.scroll {
@@ -60,10 +60,10 @@ p {
   #main-header h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 4em;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 2em; }
   #main-header h2 {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 2em; }
 
 #about {
@@ -101,7 +101,6 @@ img {
     background-size: cover;
     width: 33%;
     position: relative;
-    cursor: pointer;
     display: inline-block; }
     #portfolio .portfolio-items .portfolio-item .item-mask {
       background-color: rgba(42, 61, 79, 0.8);
@@ -129,7 +128,7 @@ img {
           #portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a {
             color: #fff; }
             #portfolio .portfolio-items .portfolio-item .item-mask .item-content .item-content-inner a :hover {
-              color: #00ccff; }
+              color: #00b7e5; }
 
 #portfolio .col-md-6,
 #portfolio .col-md-12 {
@@ -155,7 +154,7 @@ img {
     text-align: left;
     font-size: 38px; }
   #contact a {
-    color: #00ccff; }
+    color: #00b7e5; }
   #contact .contact-form {
     margin-top: 100px; }
     #contact .contact-form input:not([type='submit']),
@@ -174,8 +173,8 @@ img {
       #contact .contact-form textarea:focus {
         background-color: #2b4a64; }
     #contact .contact-form input[type='submit'] {
-      background-color: #00ccff;
-      border: 0 solid #00ccff;
+      background-color: #00b7e5;
+      border: 0 solid #00b7e5;
       color: #fff;
       transition: all .3s;
       cursor: pointer;
@@ -184,7 +183,7 @@ img {
       padding: 15px; }
       #contact .contact-form input[type='submit']:hover {
         background-color: #fff;
-        color: #00ccff; }
+        color: #00b7e5; }
   #contact address {
     font-style: normal;
     margin: 72px 0;

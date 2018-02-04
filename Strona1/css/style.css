@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background-color: #3f3d3b;
+    color: #fff;
+    padding-bottom: 200px;
+}
+/*header i nawigacja*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navbar navbar-expand-lg {
+    color: #fff
+}
+
+.navbar li {
+    margin-left: 20px;
+    cursor: pointer;
+    height: 30px;
+    list-style-type: none;
+}
+
+.navbar li:hover {
+    color: crimson;
+}
+/*rozwijane menu*/
+#sub {
+    position: relative;
+}
+
+#sub:hover .submenu {
+    display: block;
+}
+
+.submenu {
+    list-style-type: none;
+    display: none;
+    position: absolute;
+}
+
+.submenu li {
+    padding-bottom: 50px;
+    border-bottom: solid 1px #fff;
+}
+
+ul {
+    position: relative;
+    top: 20px;
+    left: 0;
+}
+
+.submenu a {
+    color: #fff;
+    text-decoration: none;
+}
+/*nagłowek i tekst główny*/
+.heading {
+    font-size: 20px;
+}
+
+.main-heading {
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 3.25em;
+}
+
+.main-text {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+/*przycisk*/
+.learning {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 30px;
+    border: solid 1px #fff;
+    border-radius: 7px;
+    background-color: #3f3d3b;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.learning:hover {
+    background-color: #808080;
+}

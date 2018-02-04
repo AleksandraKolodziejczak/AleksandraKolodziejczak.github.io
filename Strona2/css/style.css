@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/*header i nawigacja*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.header img {
+    width: 160px;
+    height: 40px;
+}
+
+.navigation {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation p {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/*sekcja intro*/
+
+#intro {
+    background: url(../img/tlo7.jpg)no-repeat;
+    width: 100%;
+    height: 60vh;
+}
+
+h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 2.25em;
+    color: #fff;
+}
+
+/*sekcja about*/
+
+#about {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.col-one-third {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
